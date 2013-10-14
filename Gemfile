@@ -9,7 +9,8 @@ gem 'sqlite3'
 
 gem 'nokogiri'
 gem 'addressable'
-
+require 'addressable/uri'
+require 'open-uri'
 
 group :development do
   gem 'better_errors'

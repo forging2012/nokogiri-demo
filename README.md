@@ -17,7 +17,7 @@ So let's jump right in...
 ## First Things First
 
 - `gem 'nokogiri'` and `require 'open-uri'` in your `Gemfile` and then run `bundle install`.
-- You may also want to use `gem 'addressable'` to build the URLs you scrape. This is not necessary, but oh so convenient. I will be using it here.
+- You may also want to use `gem 'addressable'` and `require 'addressable/uri'` to build the URLs you scrape. This is not necessary, but oh so convenient. I will be using it here.
 
 ## Getting Started
 
@@ -69,6 +69,10 @@ what I need. It's really good and much quicker than looking through the HTML
 yourself.
 
 [selector-gadget]: http://selectorgadget.com/
+
+## Demo
+
+Check out `lib/craigslist_scraper.rb`, `config/initializers/modules.rb`, and `app/models/scraping.rb`.
 
 
 
