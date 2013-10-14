@@ -31,9 +31,9 @@ query_hash = {"s"      => 0,
               "maxAsk" => 3500}
 
 url.query = URI.encode_www_form(query_hash)
-url.query #=> "s=0&nh=129&minAsk=1800&maxAsk=3500"
 
-url.to_s #=> "http://newyork.craigslist.org/search/aap/mnh
+url.query #=> "s=0&nh=129&minAsk=1800&maxAsk=3500"
+url.to_s #=> "http://newyork.craigslist.org/search/aap/mnh?s=0&nh=129&minAsk=1800&maxAsk=3500"
 
 page = Nokogiri::HTML(open(url.to_s))
 ```
